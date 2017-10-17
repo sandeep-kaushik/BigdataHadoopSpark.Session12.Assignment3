@@ -1,0 +1,33 @@
+
+							Assignment 12.3
+
+create a list of tuples :----
+
+val list =List((1,"alpha"),(2,"beta"),(3,"gamma"),(4,"zeta"),(5,"omega"))
+
+count no of string of length 4--
+
+list.count(x=>x._2.length == 4);
+
+------------------------------------------------------------------------------
+task1 :
+print the no corresponding to the length of 4:------
+
+list.foreach(x=>if(x._2.length == 4) println(x._1));
+
+
+-------------------------------------------------------------------------------
+
+task2 :
+
+val m_z_list = list.filter(x=>x._2.contains("m") || x._2.contains("z"));
+
+val maplist = m_z_list.map(x=>x._1);
+
+val sum = maplist.foldLeft(0)((x,y)=>x+y);
+
+val count = m_z_list.length;
+
+val avg = sum / count;
+
+--------------------------------------------------------------------------------
