@@ -19,6 +19,7 @@ list.foreach(x=>if(x._2.length == 4) println(x._1));
 -------------------------------------------------------------------------------
 
 task2 :
+find the average of all numbers, where the corresponding string contains alphabet ‘m’ or alphabet ‘z’------
 
 val m_z_list = list.filter(x=>x._2.contains("m") || x._2.contains("z"));
 
